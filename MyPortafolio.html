@@ -60,6 +60,14 @@
             width: 100%;
             bottom: 0;
         }
+
+        .about-img, .project-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +84,7 @@
 
     <section id="about">
         <h2>About Me</h2>
+        <img src="path/to/your/about-image.jpg" alt="About Me" class="about-img">
         <p>Welcome to my portfolio! I am a software developer with a passion for creating innovative solutions.</p>
     </section>
 
@@ -83,12 +92,19 @@
         <h2>Projects</h2>
         <div class="project">
             <h3>Project 1</h3>
+            <img src="path/to/your/project1-image.jpg" alt="Project 1" class="project-img">
             <p>Description of project 1.</p>
         </div>
         <div class="project">
             <h3>Project 2</h3>
+            <img src="path/to/your/project2-image.jpg" alt="Project 2" class="project-img">
             <p>Description of project 2.</p>
         </div>
+        <!-- Add more projects as needed -->
     </section>
+
+    <footer>
+        <p>Contact me at <a href="mailto:daniel@example.com">daniel@example.com</a></p>
+    </footer>
 </body>
 </html>
