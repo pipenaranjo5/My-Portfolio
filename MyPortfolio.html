@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Mali', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #2c3e50;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 2rem 0;
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project {
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .about-img, .project-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #2c3e50;
+        }
+
+        th, td {
+            padding: 0.5rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Daniel Naranjo</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="Daniel Toon.jpg" alt="About Me" class="about-img" style="width: 200px; height: auto;">
+        <p>Welcome to my portfolio! I am a software developer with a passion for creating innovative solutions.</p>
+        <table>
+            <tr>
+                <th>Characteristic</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>Daniel Naranjo</td>
+            </tr>
+            <tr>
+                <td>Profession</td>
+                <td>Software Developer</td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>5 years</td>
+            </tr>
+            <tr>
+                <td>Skills</td>
+                <td>JavaScript, Python, HTML, CSS</td>
+            </tr>
+            <tr>
+                <td>Hobbies</td>
+                <td>Coding, Reading, Traveling</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <img src="path/to/your/project1-image.jpg" alt="Project 1" class="project-img">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec condimentum ultrices posuere. Integer eleifend pellentesque dui, nec convallis est pellentesque in. Mauris vulputate ac risus eget blandit. Nulla ut odio non nisl viverra dapibus eu non nibh. Fusce porta quam dapibus ultrices sagittis. Sed ex eros, dapibus at ante nec, ornare accumsan nibh. Vivamus id purus facilisis, euismod odio gravida, finibus tortor. Nulla vulputate venenatis sem, et iaculis velit feugiat ac. Vestibulum a dignissim turpis. Aliquam eleifend leo nec sem pulvinar laoreet. Proin non felis vel augue pretium tempus. Cras vel nibh sed nisl egestas sagittis eu at justo. Vestibulum pulvinar urna eget mauris facilisis, vitae pulvinar ex tempor. Sed porttitor scelerisque urna, eget vehicula enim gravida interdum. Vivamus at ante lacus. Aenean at consectetur justo.</p>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <img src="path/to/your/project2-image.jpg" alt="Project 2" class="project-img">
+            <p>Donec a facilisis neque. Sed eleifend, lacus sit amet fermentum maximus, diam libero ornare dolor, quis faucibus nisl tellus vel odio. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec nec neque euismod, ultrices metus id, posuere nibh. Nulla risus nulla, faucibus quis ante vitae, vehicula tincidunt odio. Proin accumsan quis elit in hendrerit. Ut aliquet varius nunc vitae venenatis. Donec suscipit, risus in dapibus finibus, leo odio tincidunt enim, eu ultricies tellus nibh at nisl. Duis mattis arcu ac erat condimentum, vitae eleifend lorem scelerisque.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact me at <a href="mailto:daniel@example.com">daniel@example.com</a></p>
+    </footer>
+</body>
+</html>
