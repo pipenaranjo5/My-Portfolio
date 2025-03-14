@@ -1,0 +1,12 @@
+
+body {
+  font-family: "Questrial";
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Fallback color if the image doesn’t load */
+  background-image: url('background.jpeg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #2c3e50;
+}
