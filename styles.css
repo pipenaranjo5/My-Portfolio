@@ -49,6 +49,7 @@ section {
     background-color: rgba(236, 240, 241, 0.9); /* Slightly transparent background */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: large;
 }
 
 .about-section {
@@ -91,6 +92,25 @@ section {
     text-decoration: none;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.skills-list li {
+    margin: 1rem;
+    font-size: 2rem; /* Increased font size for skills text */
+}
+
+.skill-logo {
+    width: 50px;
+    height: 50px;
+}
+
 .project {
     margin-bottom: 1.5rem;
 }
@@ -99,23 +119,17 @@ footer {
     background-color: #2c3e50;
     color: #ecf0f1;
     text-align: center;
-    padding: 0.5rem 0; /* Reduced padding */
+    padding: 0.02rem 0; /* Reduced padding */
     position: fixed;
     width: 100%;
     bottom: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
     color: #3498db;
     text-decoration: none;
-}
-
-.about-img, .project-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 1rem;
 }
 
 table {
@@ -142,6 +156,14 @@ td {
     color: #2c3e50; /* Dark blue color for table cells */
 }
 
+.about-img, .project-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+}
+
 .scroll-to-top {
     position: fixed;
     bottom: 3rem; /* Moved up a bit */
@@ -159,4 +181,9 @@ td {
     justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: none; /* Initially hidden */
+}
+
+/* Make h4 titles bold */
+h4 {
+    font-weight: bold;
 }
