@@ -96,6 +96,16 @@ function displayBook(book) {
     bookContainer.appendChild(bookCover);
 }
 
+// Show the scroll-to-top button when scrolling down
+window.addEventListener('scroll', function() {
+    const scrollToTopButton = document.querySelector('.scroll-to-top');
+    if (window.scrollY > 300) {
+        scrollToTopButton.style.display = 'flex';
+    } else {
+        scrollToTopButton.style.display = 'none';
+    }
+});
+
 // Call functions to display profile, projects, and book
 document.addEventListener('DOMContentLoaded', () => {
     displayProfile();
