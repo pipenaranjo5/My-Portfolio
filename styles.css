@@ -187,3 +187,15 @@ td {
 h4 {
     font-weight: bold;
 }
+
+/* Adjust the size of the image in Project 1 */
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.project:first-of-type img {
+    width: 300px; /* Adjust this value as needed */
+    height: auto;
+}
+
