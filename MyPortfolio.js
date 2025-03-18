@@ -96,14 +96,22 @@ function displayBook(book) {
     bookContainer.appendChild(bookCover);
 }
 
-// Show the scroll-to-top button when scrolling down
-window.addEventListener('scroll', function() {
-    const scrollToTopButton = document.querySelector('.scroll-to-top');
-    if (window.scrollY > 300) {
-        scrollToTopButton.style.display = 'flex';
+let lastScrollPosition = 0;
+
+// Show or hide the scroll-to-top button based on scroll position
+window.addEventListener("scroll", function () {
+    const scrollToTopButton = document.querySelector(".scroll-to-top");
+    const currentScrollPosition = window.scrollY;
+
+    if (currentScrollPosition > 300 && currentScrollPosition > lastScrollPosition) {
+        // Show the button when scrolling down
+        scrollToTopButton.style.display = "flex";
     } else {
-        scrollToTopButton.style.display = 'none';
+        // Hide the button when scrolling up
+        scrollToTopButton.style.display = "none";
     }
+
+    lastScrollPosition = currentScrollPosition;
 });
 
 // Call functions to display profile, projects, and book
