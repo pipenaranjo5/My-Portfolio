@@ -113,9 +113,37 @@ window.addEventListener("scroll", function () {
     lastScrollPosition = currentScrollPosition;
 });
 
+// function to change to dark mode
+function dark_mode(){
+    var element = document.body;
+    element.classList.toggle("dark-theme");
+}
+
+
 // Call functions to display profile, projects, and book
 document.addEventListener('DOMContentLoaded', () => {
     displayProfile();
     displayProjects();
     displayBook(book);
+
+    // Theme toggle functionality
+    const themeToggleButton = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved theme in localStorage
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.classList.add(savedTheme);
+        themeToggleButton.textContent = savedTheme === 'dark-theme' ? '☀️' : '🌙';
+    }
+
+    // Add click event listener to the theme toggle button
+    themeToggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark-theme');
+        const isDarkTheme = body.classList.contains('dark-theme');
+        themeToggleButton.textContent = isDarkTheme ? '☀️' : '🌙';
+
+        // Save the theme preference in localStorage
+        localStorage.setItem('theme', isDarkTheme ? 'dark-theme' : 'light-theme');
+    });
 });
