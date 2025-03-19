@@ -291,7 +291,7 @@ body.dark-theme footer {
 }
 
 body.dark-theme .project-section {
-    background-color: #2c3e50; /* Darker blue background */
+    background-color: # 2c3e50; /* Darker blue background */
     color: #ecf0f1; /* Light text */
 }
 
@@ -323,11 +323,11 @@ body.dark-theme .contact-section {
     color: white;
 
 }
-.theme-toggle {
+header .theme-toggle {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background-color: #2c3e50;
+    background-color: #ecf0f1;
     color: #2c3e50;
     border: none;
     border-radius: 50%;
@@ -340,7 +340,7 @@ body.dark-theme .contact-section {
 }
 
 body.dark-theme .theme-toggle {
-    background-color: #ecf0f1;
+    background-color: #2c3e50;
     color: #2c3e50;
 }
 
