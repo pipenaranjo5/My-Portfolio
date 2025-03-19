@@ -25,6 +25,13 @@ header h1 {
     padding-left: 1rem;
 }
 
+header h1 img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -166,7 +173,7 @@ td {
 
 .scroll-to-top {
     position: fixed;
-    bottom: 1.5rem; /* Half of the button height (3rem / 2) */
+    bottom: 1.5rem; /* Adjust the position */
     right: 2rem;
     background-color: #ffffff; /* White background */
     color: #2c3e50; /* Dark blue arrow */
@@ -176,7 +183,7 @@ td {
     height: 3rem;
     font-size: 1.5rem;
     cursor: pointer;
-    align-items: center;
+align-items: center;
     justify-content: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Ensure it appears above other elements */
@@ -196,5 +203,13 @@ h4 {
 .project:first-of-type img {
     width: 300px; /* Adjust this value as needed */
     height: auto;
+}
+
+.project-img {
+    width: 300px; /* Set a fixed width for all project images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin-bottom: 1rem; /* Add spacing below the image */
 }
 

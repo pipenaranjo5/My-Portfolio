@@ -98,7 +98,6 @@ function displayBook(book) {
 
 let lastScrollPosition = 0;
 
-// Show or hide the scroll-to-top button based on scroll position
 window.addEventListener("scroll", function () {
     const scrollToTopButton = document.querySelector(".scroll-to-top");
     const currentScrollPosition = window.scrollY;
