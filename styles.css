@@ -77,6 +77,11 @@ section {
     color: #2c3e50; /* Dark blue color */
 }
 
+h2 {
+    font-size: 30pt;
+    text-align: center;
+}
+
 .about-section p {
     color: #2c3e50; /* Dark blue color */
     font-size: 20px;  /* Large font size */
@@ -122,6 +127,15 @@ section {
 
 .project {
     margin-bottom: 1.5rem;
+    
+}
+
+.flexContainer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    display: flex;
 }
 
 footer {
@@ -344,3 +358,20 @@ body.dark-theme .theme-toggle {
     color: #2c3e50;
 }
 
+.card {
+    border-radius: 1em;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width : max(40vw, 300px);
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.card h3{
+    text-align: center;
+}
+
+.imgWrapper {
+    width: 100%;
+    text-align: center;
+}
