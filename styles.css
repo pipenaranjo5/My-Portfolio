@@ -59,6 +59,7 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: large;
+    color: #2c3e50;
 }
 
 .about-section {
@@ -294,8 +295,8 @@ flip-card-back {
 
 /* Dark Theme */
 body.dark-theme {
-    background-color: #2c3e50; /* Dark blue background */
-    color: #ecf0f1; /* Light text */
+    background-color: #ecf0f1; /* Dark blue background */
+    color: ##2c3e50; /* /* Light text */
 }
 
 body.dark-theme header,
@@ -328,7 +329,7 @@ body.dark-theme .skills-list li{
 } 
 
 body.dark-theme .project {
-    color: white;
+    color: #2c3e50;
     background-color: #2c3e50;
   } 
 
