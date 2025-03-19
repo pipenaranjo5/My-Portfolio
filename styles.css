@@ -305,6 +305,11 @@ body.dark-theme footer {
     color: #2c3e50; /* Dark text */
 }
 
+body.dark-theme footer a {
+    color: #dbca34;
+    text-decoration: none;
+}
+
 body.dark-theme .project-section {
     background-color: # 2c3e50; /* Darker blue background */
     color: #ecf0f1; /* Light text */
