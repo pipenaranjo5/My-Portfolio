@@ -121,15 +121,23 @@
 
     <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form action="/submit" method="POST">
+        <div class="formContainer">
+        <form action="/submit" method="POST" class="form">
+            <div class="formInput">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" class="input" required>
+        </div>
+        <div class="formInput">
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required class="input"></div>
+            <div class="formInput">
+
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
+            <textarea id="message" name="message" class="input" required></textarea>
+            </div><button type="submit">Submit</button>
         </form>
+    </div>
     </section>
 
     <footer></footer>
